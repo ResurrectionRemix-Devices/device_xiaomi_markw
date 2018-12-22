@@ -122,6 +122,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_PACKAGES += \
     AntHalService \
     libantradio \
+		com.dsi.ant.antradio_library \
     antradio_app
 
 #Audio
