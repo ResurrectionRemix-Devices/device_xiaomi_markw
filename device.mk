@@ -194,9 +194,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.1-service.clearkey
 
-# Doze mode
+# Device-specific settings
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+		XiaomiDirac \
+		XiaomiDoze \
+		XiaomiParts
 
 # Face detection extension
 PRODUCT_PACKAGES += \
@@ -473,10 +475,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/markw/markw-vendor.mk)
