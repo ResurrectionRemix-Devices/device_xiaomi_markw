@@ -1,0 +1,61 @@
+From 39514b838d7487770ddab208b123e87e82ccfc72 Mon Sep 17 00:00:00 2001
+From: ElDainosor <eldainosor@gmail.com>
+Date: Thu, 23 Aug 2018 01:18:35 +0000
+Subject: [PATCH] base: Actually fix the padding on StatusBar
+
+Android P gets a new QS layout that looks good
+but it has some issues on smaller screens devices,
+like the rounded buttons clipping with the borders
+and the date not looking really good.
+LineageOS suggested a fix (https://review.lineageos.org/224021)
+but it's circumventing it because it adds padding
+ and some people doesn't like the padding, so, instead
+let's apply the 8dp spacing over the affected headers
+and the small qs tile.
+
+Change-Id: I3b9961ba3316cb525f26f4c890e9dd8fb536fbc2
+---
+ .../SystemUI/res/layout/quick_status_bar_expanded_header.xml  | 4 ++++
+ packages/SystemUI/res/values/dimens.xml                       | 4 ++++
+ 2 files changed, 8 insertions(+)
+
+diff --git a/packages/SystemUI/res/layout/quick_status_bar_expanded_header.xml b/packages/SystemUI/res/layout/quick_status_bar_expanded_header.xml
+index ed18dc72840..50e71c097ef 100644
+--- a/packages/SystemUI/res/layout/quick_status_bar_expanded_header.xml
++++ b/packages/SystemUI/res/layout/quick_status_bar_expanded_header.xml
+@@ -22,6 +22,8 @@
+     android:layout_width="match_parent"
+     android:layout_height="@*android:dimen/quick_qs_total_height"
+     android:layout_gravity="@integer/notification_panel_layout_gravity"
++    android:layout_marginStart="@dimen/qs_items_padding"
++    android:layout_marginEnd="@dimen/qs_items_padding"
+     android:background="@android:color/transparent"
+     android:baselineAligned="false"
+     android:clickable="false"
+@@ -47,6 +49,8 @@
+         android:layout_below="@id/quick_qs_status_icons"
+         android:layout_marginStart="@dimen/qs_header_tile_margin_horizontal"
+         android:layout_marginEnd="@dimen/qs_header_tile_margin_horizontal"
++        android:paddingLeft="@dimen/qs_items_padding"
++        android:paddingRight="@dimen/qs_items_padding"
+         android:accessibilityTraversalAfter="@+id/date_time_group"
+         android:accessibilityTraversalBefore="@id/expand_indicator"
+         android:clipChildren="false"
+diff --git a/packages/SystemUI/res/values/dimens.xml b/packages/SystemUI/res/values/dimens.xml
+index 79e1fae98c2..a4e405a5e26 100644
+--- a/packages/SystemUI/res/values/dimens.xml
++++ b/packages/SystemUI/res/values/dimens.xml
+@@ -947,6 +947,10 @@
+     <dimen name="rounded_corner_radius_top">@*android:dimen/rounded_corner_radius_top</dimen>
+     <dimen name="rounded_corner_radius_bottom">@*android:dimen/rounded_corner_radius_bottom</dimen>
+     <dimen name="rounded_corner_content_padding">0dp</dimen>
++
++    <!-- Sets a custom extra padding for the QS icons and statusbar date -->
++    <dimen name="qs_items_padding">8dp</dimen>
++
+     <dimen name="nav_content_padding">0dp</dimen>
+     <dimen name="nav_quick_scrub_track_edge_padding">24dp</dimen>
+     <dimen name="nav_quick_scrub_track_thickness">10dp</dimen>
+-- 
+2.17.1
+
