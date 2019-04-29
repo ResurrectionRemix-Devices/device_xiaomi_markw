@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2018 ViperOS Project
+
+   This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Theme tile -->
+    <string name="system_theme_style_title">Стиль</string>
+    <string name="system_theme_style_auto">Автоматически</string>
+    <string name="system_theme_style_light">Светлая</string>
+    <string name="system_theme_style_dark">Тёмная</string>
+    <string name="quick_settings_theme_tile_title">Акцент</string>
+    <string name="quick_settings_theme_tile_accent_detail_title">Выберите цвет</string>
+    <string name="quick_settings_theme_tile_style_detail_title">Выберите стиль</string>
+    <string name="quick_settings_theme_tile_color_default">По умолчанию</string>
+    <string name="quick_settings_theme_tile_color_red">Красный</string>
+    <string name="quick_settings_theme_tile_color_pink">Розовый</string>
+    <string name="quick_settings_theme_tile_color_purple">Пурпурный</string>
+    <string name="quick_settings_theme_tile_color_deep_purple">Темно-фиолетовый</string>
+    <string name="quick_settings_theme_tile_color_indigo">Индиго</string>
+    <string name="quick_settings_theme_tile_color_blue">Синий</string>
+    <string name="quick_settings_theme_tile_color_light_blue">Светло-синий</string>
+    <string name="quick_settings_theme_tile_color_cyan">Циан</string>
+    <string name="quick_settings_theme_tile_color_teal">Бирюзовый</string>
+    <string name="quick_settings_theme_tile_color_green">Зелёный</string>
+    <string name="quick_settings_theme_tile_color_light_green">Светло-зелёный</string>
+    <string name="quick_settings_theme_tile_color_lime">Лайм</string>
+    <string name="quick_settings_theme_tile_color_yellow">Жёлтый</string>
+    <string name="quick_settings_theme_tile_color_amber">Янтарный</string>
+    <string name="quick_settings_theme_tile_color_orange">Оранжевый</string>
+    <string name="quick_settings_theme_tile_color_deep_orange">Темно-оранжевый</string>
+    <string name="quick_settings_theme_tile_color_brown">Коричневый</string>
+    <string name="quick_settings_theme_tile_color_grey">Серый</string>
+    <string name="quick_settings_theme_tile_color_blue_grey">Серо-голубой</string>
+    <string name="quick_settings_theme_tile_color_black">Чёрный</string>
+    <string name="quick_settings_theme_tile_color_white">Белый</string>
+    <string name="quick_settings_theme_tile_color_user_one">#StayDirty</string>
+    <string name="quick_settings_theme_tile_color_user_two">Виноград</string>
+    <string name="quick_settings_theme_tile_color_user_three">Blu</string>
+    <string name="quick_settings_theme_tile_color_user_four">Мята</string>
+    <string name="quick_settings_theme_tile_color_user_five">Деньги</string>
+    <string name="quick_settings_theme_tile_color_user_six">Песок</string>
+    <string name="quick_settings_theme_tile_color_user_seven">Rams</string>
+    <string name="theme_info_title">Что это?</string>
+    <string name="theme_info_message">Плитка «Темы» - это уникальная, но простая в использовании плитка, которая позволяет пользователю изменять акцент или стиль системы. Для переключения между акцентами и стилями просто нажмите и удерживайте нажатой кнопку на плитке, а затем снова нажмите, чтобы выбрать один из предложенных вариантов.</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time">Dash Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> until full)</string>
+    <string name="keyguard_plugged_in_dash_charging">Dash Charging</string>
+
+    <string name="global_action_reboot">Перезагрузка</string>
+    <string name="global_action_reboot_more">Перезагрузка\u2026</string>
+    <string name="global_action_reboot_sub">Система</string>
+    <string name="global_action_reboot_recovery">Рековери</string>
+    <string name="global_action_reboot_bootloader">Загрузчик</string>
+    <string name="global_action_reboot_ui">SystemUI</string>
+    <string name="global_action_dismissable_dialog_text">Расширенная перезагрузка отключена. \ Перезагрузить</string>
+    <string name="global_action_dnaa">Не показывать снова</string>
+    <string name="global_action_settings">Настройки</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_turbo_power_time">TurboPower connected (<xliff:g id="charging_time_left">%s</xliff:g> until full)</string>
+    <string name="keyguard_plugged_in_turbo_power_charging">TurboPower connected</string>
+
+    <!-- Screenshot -->
+    <string name="quick_settings_screenshot_label">Скриншот</string>
+    <string name="quick_settings_region_screenshot_label">Частичный скриншот</string>
+
+    <!-- Ambient Display Pixel-Like string -->
+    <string name="ambientmusic_songinfo">%s by %s</string>
+
+    <!-- Icon VPN -->
+    <string name="status_bar_vpn">VPN</string>
+
+</resources>

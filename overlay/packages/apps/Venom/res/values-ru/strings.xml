@@ -66,11 +66,11 @@
     <string name="lockscreensettings_summary">Дополнительные настройки экрана блокировки</string>
     <!-- About Categorie -->
     <string name="about_viper">ViperOS</string>
-    <string name="about_viper_discription">Who we are?\nWe are the ViperOS team, an organized and Brazilian team that aims to jointly develop a clean and useful Android operational system.\nWe value pure android, but it always looks more beautiful with more details, does not it?\nWe offer a simple and easy menu for customization of your device, we value a clean and direct interface, putting in your device possibilities of customizations and a good experience.\nWe offer useful resources for your day-to-day life. Updated every month with security patch according to Google.\nOur ROM offers a theme engine for you to customize to your liking, our philosophy is to deliver a stable ROM with useful features and we cherish a lightweight interface prioritizing performance and battery for your device.</string>
+    <string name="about_viper_discription">Кто мы? \ Мы команда ViperOS, организованная бразильская команда, которая стремится совместно разработать чистую и полезную операционную систему Android. \ Мы ценим чистый android, но он всегда выглядит красивее с большим количеством деталей, не так ли? \ Мы предлагаем простое и удобное меню для настройки вашего устройства, мы ценим чистый и прямой интерфейс, предоставляя вашему устройству возможности настройки и хорошую прокачку. \ Мы предлагаем полезные ресурсы для вашей повседневной жизни. Обновляется каждый месяц с помощью патча безопасности для Google. \ Наша прошивка предлагает механизм тем, который вы можете настроить по своему вкусу. Наша философия заключается в предоставлении стабильной прошивки с полезными функциями, и мы ценим легкий интерфейс с приоритетом производительности и заряда аккумулятора для вашего устройства.</string>
     <string name="birdman_name">BIRDManJ</string>
     <string name="birdman_discription">Основатель</string>
     <string name="jbcdroid_name">JBCDroid</string>
-    <string name="jbcdroid_discription">Co-Founder | Lead Developer | Maintainer</string>
+    <string name="jbcdroid_discription">Соучредитель | Ведущий разработчик | Сопровождающий</string>
     <string name="esrom_name">EsromTech</string>
     <string name="esrom_discription">Совместный ведущий разработчик | Сопровождающий</string>
     <string name="rkschunk_name">RKSchunk</string>
@@ -80,7 +80,7 @@
     <string name="kley_name">Kley76</string>
     <string name="kley_discription">Дизайнер</string>
     <string name="joshua_name">Joshua M.</string>
-    <string name="joshua_discription">Designer | Maintainer</string>
+    <string name="joshua_discription">Дизайнер | Сопровождающий</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title">Слайдер яркости</string>
     <string name="qs_brightness_slider_summary">Показывать слайдер яркости в панели быстрых настроек</string>
@@ -320,7 +320,7 @@
     <string name="battery_light_medium_color_title">Зарядка батареи</string>
     <string name="battery_light_full_color_title">Полностью заряжена</string>
     <!-- Lights settings screen, notification light settings -->
-    <string name="notification_light_title">Свет уведомления</string>
+    <string name="notification_light_title">Световая индикация уведомления</string>
     <string name="notification_light_general_title">Общие</string>
     <string name="notification_light_advanced_title">Дополнительно</string>
     <string name="notification_light_applist_title">Приложения</string>
@@ -329,7 +329,7 @@
     <string name="notification_light_default_value">По умолчанию</string>
     <string name="notification_light_missed_call_title">Пропущенный вызов</string>
     <string name="notification_light_voicemail_title">Голосовая почта</string>
-    <string name="notification_light_screen_on">Светить с включенным экраном</string>
+    <string name="notification_light_screen_on">Светить при включенном экране</string>
     <string name="notification_light_zen_mode">Светить в режиме \"Не беспокоить\"</string>
     <string name="keywords_lights_brightness_level">Яркость светодиода</string>
     <string name="notification_light_automagic">Выбирать цвета автоматически</string>

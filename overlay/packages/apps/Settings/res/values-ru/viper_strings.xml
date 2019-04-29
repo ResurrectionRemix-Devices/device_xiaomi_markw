@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 ViperOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, ViperOS version -->
+    <string name="keywords_viper_version">Версия ViperOS</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Дата сборки</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">Дата сборки, Информация о сборке</string>
+
+    <!-- Venom Settings -->
+    <string name="venom_settings_title">Яд</string>
+    <string name="venom_settings_summary">Опции прошивки и кастомизации</string>
+
+    <!-- Themes -->
+    <string name="theme_category_title">Системная тема</string>
+    <string name="disable_themes_installed_title">Системные темы недоступны для предотвращения конфликтов с Substratum. Удалите их, если вы хотите использовать эти темы.</string>
+    <string name="disable_accents_installed_title">Выбор акцента недоступен для предотвращения конфликтов с Substratum. Удалите его, если вы хотите использовать акцент.</string>
+    <string name="accent_picker_dialog_title">Выберите цвет</string>
+    <string name="theme_accent_picker_title">Акцентный цвет</string>
+    <string name="theme_accent_picker_summary">Выберите системный акцентный цвет</string>
+    <string name="theme_accent_picker_default">По умолчанию</string>
+    <string name="accent_picker_material_colors">Цветовая палитра</string>
+    <string name="accent_picker_custom_colors">Пользовательский цвет</string>
+    <string name="accent_picker_nougat_colors">ViperOS цвета андроид 7</string>
+    <string name="applying_theme_toast">Применение темы, пожалуйста, подождите...</string>
+    <string name="theme_applied_toast">Тема применена!</string>
+    <string name="systemui_theme_black">Чёрная</string>
+    <string name="systemui_theme_bluenight">Темно-синий</string>
+    <string name="systemui_theme_blacksupreme">Супер-черная</string>
+    <string name="theme_picker_dialog_title">Выберите цвет темы</string>
+    <string name="theme_picker_summary">Выберите цвет для тем Тень/Стекло</string>
+    <string name="theme_picker_auto">Автоматически</string>
+
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">Стиль плиток быстрых настроек</string>
+    <string name="qs_tile_style_default">По умолчанию</string>
+    <string name="qs_tile_style_square">Квадрат</string>
+    <string name="qs_tile_style_rounded_square">Скругленный квадрат</string>
+    <string name="qs_tile_style_squircle">Округлый квадрат</string>
+    <string name="qs_tile_style_tear_drop">Клякса</string>
+    <string name="qs_tile_style_double_circle">Двойной круг</string>
+    <string name="qs_styles_dialog_title">Выберите стиль плиток быстрых настроек</string>
+
+    <!-- Switch styles -->
+    <string name="switch_style_title">Стиль переключателей настроек</string>
+    <string name="switch_default">По умолчанию</string>
+    <string name="switch_md2">Материальный дизайн</string>
+    <string name="switch_oneplus">OnePlus</string>
+    <string name="switch_styles_dialog_title">Выберите стиль переключателей</string>
+
+    <!-- Lockscreen clock styles -->
+    <string name="clock_ls_style_title">Стиль часов на экране блокировки</string>
+    <string name="clock_ls_styles_dialog_title">Выберите стиль часов на экране блокировки</string>
+
+    <!-- Audio Panel view  -->
+    <string name="audio_panel_view_title">Панель громкости</string>
+    <string name="audio_panel_view_summary">Настроить панель громкости</string>
+    <string name="audio_panel_view_info">Активный поток громкости будет отображаться на экране, даже если здесь отключен. Включенные здесь потоки громкости будут отображаться с максимальной силой.</string>
+    <string name="audio_panel_view_media_title">Мультимедиа</string>
+    <string name="audio_panel_view_ringer_title">Рингтон</string>
+    <string name="audio_panel_view_notification_title">Уведомление</string>
+    <string name="audio_panel_view_notification_disabled">Связать громкость звонка и уведомлений</string>
+    <string name="audio_panel_view_alarm_title">Будильник</string>
+    <string name="audio_panel_view_voice_title">Голос</string>
+    <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
+
+    <!-- SELinux Status -->
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключён</string>
+    <string name="selinux_status_permissive">Разрешающий</string>
+    <string name="selinux_status_enforcing">Принудительный</string>
+
+    <!-- ViperOS info -->
+    <string name="viper_title">ViperOS</string>
+    <string name="viper_info">Версия ViperOS</string>
+    <string name="viper_maintainer_title">Сопровождающий</string>
+    <string name="viper_maintainer_summary">SonicBSV</string>
+    <string name="viper_date">Дата сборки</string>
+    <string name="viper_type">Тип сборки</string>
+    <string name="viper_device">Устройство</string>
+    <string name="viper_version">Версия</string>
+
+    <!-- Device Introduction -->
+    <string name="first_time_introduction_header">Добро пожаловать в ViperOS!</string>
+    <string name="first_time_introduction_message">Испытайте Android как никогда прежде: выдающееся время автономной работы, потрясающее ощущение плавности и дополнительный набор пользовательских функций. Вы можете настроить строку состояния, быстрые настройки, панель навигации, экран блокировки, обновления, уведомления и даже анимацию. Большинство из функции представлены в соответствующих панелях управления. Вот некоторые вещи, которые вы можете сделать, чтобы начать:
+    
+- Настройка. Проведите вверх по кнопке Дом
+- Поиграйте с нашими встроенными опциями темы. Вы можете выбрать цвет фона: «Светлый», «Темный», «Черный», а также есть несколько доступных цветов.</string>
+    <string name="first_time_confirm_button">ПОНЯТНО</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">Статистика батареи будет сброшена</string>
+    <string name="ok_string">OK</string>
+
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Температура батареи</string>
+
+    <!-- Battery ui -->
+    <string name="battery_stats_charging">Зарядка</string>
+    <string name="battery_stats_discharging">Не заряжается</string>
+
+</resources>
