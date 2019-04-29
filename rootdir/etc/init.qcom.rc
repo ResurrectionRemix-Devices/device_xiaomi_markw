@@ -1,4 +1,4 @@
-# Copyright (c) 2009-2012, 2014-2018, The Linux Foundation. All rights reserved.
+# Copyright (c) 2009-2012, 2014-2019, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -511,7 +511,7 @@ on property:persist.vendor.radio.atfwd.start=false
 
 on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
-    
+
 # corefile limit
 on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
@@ -558,10 +558,6 @@ service vendor.cnd /vendor/bin/cnd
     user system
     group system wifi inet radio wakelock net_admin
 
-service dpmQmiMgr /vendor/bin/dpmQmiMgr
-    class main
-    user system
-    group system
 
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
@@ -578,20 +574,8 @@ service vendor.tftp_server /vendor/bin/tftp_server
    class core
    user root
 
-on property:vendor.wc_transport.start_hci=true
-    start vendor.start_hci_filter
 
-on property:vendor.wc_transport.start_hci=false
-    stop vendor.start_hci_filter
-
-service vendor.start_hci_filter /vendor/bin/wcnss_filter
-    class late_start
-    user bluetooth
-    group bluetooth diag system wakelock
-    seclabel u:r:bluetooth:s0
-    disabled
-
-service ftmd /vendor/bin/logwrapper /vendor/bin/ftmdaemon
+service ftmd /system/bin/logwrapper /vendor/bin/ftmdaemon
     class late_start
     user root
     group bluetooth net_bt_admin misc net_bt_stack diag net_bt
@@ -609,12 +593,6 @@ service vendor.netmgrd /vendor/bin/netmgrd
     class main
     disabled
 
-service vendor.ipacm-diag /vendor/bin/ipacm-diag
-    class main
-    user radio
-    socket ipacm_log_file dgram 660 radio radio
-    group radio diag oem_2901
-    disabled
 
 service vendor.ipacm /vendor/bin/ipacm
     class main
