@@ -433,6 +433,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml \
 
+# PixelAmbientServices
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/PixelAmbientServices/music_detector.descriptor:system/etc/firmware/music_detector.descriptor \
+    $(LOCAL_PATH)/PixelAmbientServices/music_detector.sound_model:system/etc/firmware/music_detector.sound_model 
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -468,12 +473,10 @@ PRODUCT_COPY_FILES += \
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
-    telephony-ext \
-    qti-telephony-common
+    telephony-ext 
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
-    qti-telephony-common
+    telephony-ext 
 
 # TextClassifier
 PRODUCT_PACKAGES += \
