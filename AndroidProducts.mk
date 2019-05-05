@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/viper_markw.mk
+    $(LOCAL_DIR)/rr_markw.mk
