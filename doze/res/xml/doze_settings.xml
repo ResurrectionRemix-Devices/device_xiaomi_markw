@@ -20,7 +20,8 @@
         android:key="ambient_display"
         android:defaultValue="true"
         android:title="@string/ambient_display_title"
-        android:summary="@string/ambient_display_summary" />
+        android:summary="@string/ambient_display_summary"
+        android:icon="@drawable/ic_eye" />
 
     <PreferenceCategory
         android:key="tilt_sensor"
@@ -31,7 +32,8 @@
             android:defaultValue="false"
             android:title="@string/pick_up_title"
             android:summary="@string/pick_up_summary"
-            android:dependency="ambient_display" />
+            android:dependency="ambient_display"
+            android:icon="@drawable/ic_pickup" />
 
     </PreferenceCategory>
 
@@ -44,14 +46,16 @@
             android:defaultValue="false"
             android:title="@string/hand_wave_gesture_title"
             android:summary="@string/hand_wave_gesture_summary"
-            android:dependency="ambient_display" />
+            android:dependency="ambient_display"
+            android:icon="@drawable/ic_hand" />
 
         <SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
             android:title="@string/pocket_gesture_title"
             android:summary="@string/pocket_gesture_summary"
-            android:dependency="ambient_display" />
+            android:dependency="ambient_display"
+            android:icon="@drawable/ic_pocket" />
 
     </PreferenceCategory>
 
