@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "ShihabZzz/android_vendor_xiaomi_markw-Sonic",
+    "target_path": "vendor/xiaomi",
+    "branch": "RR-PCV6"
+  },
+  {
+    "remote": "github",
+    "repository": "ShihabZzz/android_kernel_xiaomi_msm8953",
+    "target_path": "kernel/xiaomi/markw",
+    "branch": "ol-upv4"
+  }
+]
