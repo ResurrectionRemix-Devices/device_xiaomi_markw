@@ -1306,21 +1306,21 @@ case "$target" in
                 done
                 # disable thermal & BCL core_control to update interactive gov settings
                 echo 0 > /sys/module/msm_thermal/core_control/enabled
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n disable > $mode
                 done
-                for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+                for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
                 do
                     bcl_hotplug_mask=`cat $hotplug_mask`
                     echo 0 > $hotplug_mask
                 done
-                for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+                for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
                 do
                     bcl_soc_hotplug_mask=`cat $hotplug_soc_mask`
                     echo 0 > $hotplug_soc_mask
                 done
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n enable > $mode
                 done
@@ -1385,19 +1385,19 @@ case "$target" in
 
                 # re-enable thermal & BCL core_control now
                 echo 1 > /sys/module/msm_thermal/core_control/enabled
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n disable > $mode
                 done
-                for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+                for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
                 do
                     echo $bcl_hotplug_mask > $hotplug_mask
                 done
-                for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+                for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
                 do
                     echo $bcl_soc_hotplug_mask > $hotplug_soc_mask
                 done
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n enable > $mode
                 done
@@ -1462,21 +1462,21 @@ case "$target" in
                 done
                 # disable thermal & BCL core_control to update interactive gov settings
                 echo 0 > /sys/module/msm_thermal/core_control/enabled
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n disable > $mode
                 done
-                for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+                for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
                 do
                     bcl_hotplug_mask=`cat $hotplug_mask`
                     echo 0 > $hotplug_mask
                 done
-                for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+                for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
                 do
                     bcl_soc_hotplug_mask=`cat $hotplug_soc_mask`
                     echo 0 > $hotplug_soc_mask
                 done
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n enable > $mode
                 done
@@ -1579,19 +1579,19 @@ case "$target" in
 
                 # re-enable thermal & BCL core_control now
                 echo 1 > /sys/module/msm_thermal/core_control/enabled
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n disable > $mode
                 done
-                for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+                for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
                 do
                     echo $bcl_hotplug_mask > $hotplug_mask
                 done
-                for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+                for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
                 do
                     echo $bcl_soc_hotplug_mask > $hotplug_soc_mask
                 done
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n enable > $mode
                 done
@@ -1732,21 +1732,21 @@ case "$target" in
 
                 # disable thermal & BCL core_control to update interactive gov settings
                 echo 0 > /sys/module/msm_thermal/core_control/enabled
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n disable > $mode
                 done
-                for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+                for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
                 do
                     bcl_hotplug_mask=`cat $hotplug_mask`
                     echo 0 > $hotplug_mask
                 done
-                for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+                for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
                 do
                     bcl_soc_hotplug_mask=`cat $hotplug_soc_mask`
                     echo 0 > $hotplug_soc_mask
                 done
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n enable > $mode
                 done
@@ -1777,19 +1777,19 @@ case "$target" in
 
                 # re-enable thermal & BCL core_control now
                 echo 1 > /sys/module/msm_thermal/core_control/enabled
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n disable > $mode
                 done
-                for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+                for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
                 do
                     echo $bcl_hotplug_mask > $hotplug_mask
                 done
-                for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+                for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
                 do
                     echo $bcl_soc_hotplug_mask > $hotplug_soc_mask
                 done
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n enable > $mode
                 done
@@ -1856,21 +1856,21 @@ case "$target" in
 
                 # disable thermal & BCL core_control to update interactive gov settings
                 echo 0 > /sys/module/msm_thermal/core_control/enabled
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n disable > $mode
                 done
-                for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+                for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
                 do
                     bcl_hotplug_mask=`cat $hotplug_mask`
                     echo 0 > $hotplug_mask
                 done
-                for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+                for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
                 do
                     bcl_soc_hotplug_mask=`cat $hotplug_soc_mask`
                     echo 0 > $hotplug_soc_mask
                 done
-                for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+                for mode in /sys/devices/soc.0/qcom,bcl.*/mode
                 do
                     echo -n enable > $mode
                 done
@@ -1912,19 +1912,19 @@ case "$target" in
 
             # re-enable thermal & BCL core_control now
             echo 1 > /sys/module/msm_thermal/core_control/enabled
-            for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+            for mode in /sys/devices/soc.0/qcom,bcl.*/mode
             do
                 echo -n disable > $mode
             done
-            for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+            for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
             do
                 echo $bcl_hotplug_mask > $hotplug_mask
             done
-            for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+            for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
             do
                 echo $bcl_soc_hotplug_mask > $hotplug_soc_mask
             done
-            for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+            for mode in /sys/devices/soc.0/qcom,bcl.*/mode
             do
                 echo -n enable > $mode
             done
@@ -2537,21 +2537,21 @@ case "$target" in
 
             # disable thermal bcl hotplug to switch governor
             echo 0 > /sys/module/msm_thermal/core_control/enabled
-            for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+            for mode in /sys/devices/soc.0/qcom,bcl.*/mode
             do
                 echo -n disable > $mode
             done
-            for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+            for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
             do
                 bcl_hotplug_mask=`cat $hotplug_mask`
                 echo 0 > $hotplug_mask
             done
-            for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+            for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
             do
                 bcl_soc_hotplug_mask=`cat $hotplug_soc_mask`
                 echo 0 > $hotplug_soc_mask
             done
-            for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+            for mode in /sys/devices/soc.0/qcom,bcl.*/mode
             do
                 echo -n enable > $mode
             done
@@ -2616,19 +2616,19 @@ case "$target" in
 
             # re-enable thermal and BCL hotplug
             echo 1 > /sys/module/msm_thermal/core_control/enabled
-            for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+            for mode in /sys/devices/soc.0/qcom,bcl.*/mode
             do
                 echo -n disable > $mode
             done
-            for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+            for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
             do
                 echo $bcl_hotplug_mask > $hotplug_mask
             done
-            for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+            for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
             do
                 echo $bcl_soc_hotplug_mask > $hotplug_soc_mask
             done
-            for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+            for mode in /sys/devices/soc.0/qcom,bcl.*/mode
             do
                 echo -n enable > $mode
             done
@@ -3242,21 +3242,21 @@ case "$target" in
         echo "4:960000 5:960000 6:960000 7:960000" > /sys/module/msm_performance/parameters/cpu_max_freq
         # disable thermal bcl hotplug to switch governor
         echo 0 > /sys/module/msm_thermal/core_control/enabled
-        for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+        for mode in /sys/devices/soc.0/qcom,bcl.*/mode
         do
             echo -n disable > $mode
         done
-        for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+        for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
         do
             bcl_hotplug_mask=`cat $hotplug_mask`
             echo 0 > $hotplug_mask
         done
-        for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+        for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
         do
             bcl_soc_hotplug_mask=`cat $hotplug_soc_mask`
             echo 0 > $hotplug_soc_mask
         done
-        for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+        for mode in /sys/devices/soc.0/qcom,bcl.*/mode
         do
             echo -n enable > $mode
         done
@@ -3294,19 +3294,19 @@ case "$target" in
         cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_max_freq > /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
         # re-enable thermal and BCL hotplug
         echo 1 > /sys/module/msm_thermal/core_control/enabled
-        for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+        for mode in /sys/devices/soc.0/qcom,bcl.*/mode
         do
             echo -n disable > $mode
         done
-        for hotplug_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_mask
+        for hotplug_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_mask
         do
             echo $bcl_hotplug_mask > $hotplug_mask
         done
-        for hotplug_soc_mask in /sys/devices/soc/soc:qcom,bcl*/hotplug_soc_mask
+        for hotplug_soc_mask in /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask
         do
             echo $bcl_soc_hotplug_mask > $hotplug_soc_mask
         done
-        for mode in /sys/devices/soc/soc:qcom,bcl*/mode
+        for mode in /sys/devices/soc.0/qcom,bcl.*/mode
         do
             echo -n enable > $mode
         done
