@@ -124,8 +124,6 @@ service thermal-engine /vendor/bin/thermal-engine
 
 
 on boot
-    start rmt_storage
-
     ####Regionalization config and prop files####
     chmod 0644 /mnt/vendor/persist/speccfg/spec
     chmod 0644 /mnt/vendor/persist/speccfg/devicetype
