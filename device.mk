@@ -35,7 +35,7 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi
 
 # Permissions
 PRODUCT_COPY_FILES += \
-		external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
@@ -89,8 +89,8 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
-    libantradio \
-		com.dsi.ant.antradio_library
+    com.dsi.ant.antradio_library \
+    libantradio
 
 #Audio
 PRODUCT_PACKAGES += \
@@ -99,7 +99,7 @@ PRODUCT_PACKAGES += \
     audio_amplifier.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
-	 libaacwrapper \
+    libaacwrapper \
     libqcompostprocbundle \
     libaudio-resampler \
     libqcomvisualizer \
@@ -208,7 +208,8 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_markw \
-		fakelogprint
+    fakelogprint
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -223,7 +224,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl-qti \
-	 libgnss \
+    libgnss \
     libgnsspps \
     libsensorndkbridge
 
@@ -244,29 +245,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qcom.wifi.sh \
-    init.qti.ims.sh \
-    fstab.qcom \
-    init.qti.fm.rc \
-    init.qcom.rc \
-    init.qcom.usb.rc \
-    init.target.rc \
-    ueventd.qcom.rc
-
-# Keylayout
+# Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ft5x06_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5x06_ts.kl \
     $(LOCAL_PATH)/keylayout/gf3208.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gf3208.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/msm8953-snd-card-mtp_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/msm8953-snd-card-mtp_Button_Jack.kl \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
+
+# IPA Manager
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml \
+    liboffloadhal
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -358,6 +349,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml \
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.target.rc \
+    ueventd.qcom.rc
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -445,9 +446,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
     hostapd_cli \
-    ipacm \
-    IPACM_cfg.xml \
-		liboffloadhal \
     libqsap_sdk \
     libwifi-hal-qcom \
     wificond \
@@ -463,7 +461,7 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
-		WfdCommon
+    WfdCommon
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/markw/markw-vendor.mk)
