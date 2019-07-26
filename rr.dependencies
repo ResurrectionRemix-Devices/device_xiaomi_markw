@@ -1,9 +1,9 @@
 [
   {
     "remote": "github",
-    "repository": "ShihabZzz/android_vendor_xiaomi_markw-Sonic",
+    "repository": "ShihabZzz/proprietary_vendor_xiaomi_markw",
     "target_path": "vendor/xiaomi",
-    "branch": "RR-PCV6"
+    "branch": "pie"
   },
   {
     "remote": "github",
