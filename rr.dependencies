@@ -7,8 +7,8 @@
   },
   {
     "remote": "github",
-    "repository": "ShihabZzz/android_kernel_xiaomi_msm8953",
+    "repository": "ShihabZzz/android_kernel_xiaomi_markw",
     "target_path": "kernel/xiaomi/markw",
-    "branch": "ol-upv4"
+    "branch": "pie"
   }
 ]
