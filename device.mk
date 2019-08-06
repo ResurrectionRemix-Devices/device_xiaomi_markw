@@ -134,6 +134,10 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     Snap
 
+# Camera Shim
+PRODUCT_PACKAGES += \
+    libshims_qcamera-daemon
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
